@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.93.4 commit date:2021-08-31, commit time:09:23, hash:b7205031cec4</authoring_tool>
+    </contributor>
+    <created>2021-09-28T00:43:41</created>
+    <modified>2021-09-28T00:43:41</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">39.59775</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <dof_distance sid="dof_distance" type="float">10</dof_distance>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Light-light" name="Light">
+      <technique_common>
+        <point>
+          <color sid="color">1000 1000 1000</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0.00111109</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <type sid="type" type="int">0</type>
+          <flag sid="flag" type="int">0</flag>
+          <mode sid="mode" type="int">1</mode>
+          <gamma sid="blender_gamma" type="float">1</gamma>
+          <red sid="red" type="float">1</red>
+          <green sid="green" type="float">1</green>
+          <blue sid="blue" type="float">1</blue>
+          <shadow_r sid="blender_shadow_r" type="float">0</shadow_r>
+          <shadow_g sid="blender_shadow_g" type="float">0</shadow_g>
+          <shadow_b sid="blender_shadow_b" type="float">0</shadow_b>
+          <energy sid="blender_energy" type="float">1000</energy>
+          <dist sid="blender_dist" type="float">29.99998</dist>
+          <spotsize sid="spotsize" type="float">75</spotsize>
+          <spotblend sid="spotblend" type="float">0.15</spotblend>
+          <att1 sid="att1" type="float">0</att1>
+          <att2 sid="att2" type="float">1</att2>
+          <falloff_type sid="falloff_type" type="int">2</falloff_type>
+          <clipsta sid="clipsta" type="float">0.04999995</clipsta>
+          <clipend sid="clipend" type="float">30.002</clipend>
+          <bias sid="bias" type="float">1</bias>
+          <soft sid="soft" type="float">3</soft>
+          <bufsize sid="bufsize" type="int">2880</bufsize>
+          <samp sid="samp" type="int">3</samp>
+          <buffers sid="buffers" type="int">1</buffers>
+          <area_shape sid="area_shape" type="int">1</area_shape>
+          <area_size sid="area_size" type="float">0.1</area_size>
+          <area_sizey sid="area_sizey" type="float">0.1</area_sizey>
+          <area_sizez sid="area_sizez" type="float">1</area_sizez>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_effects>
+    <effect id="Granite_-_Red-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0 0 0 1</color>
+            </diffuse>
+            <reflectivity>
+              <float sid="specular">1</float>
+            </reflectivity>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="Granite_-_Red-material" name="Granite - Red">
+      <instance_effect url="#Granite_-_Red-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Body1-mesh" name="Body1">
+      <mesh>
+        <source id="Body1-mesh-positions">
+          <float_array id="Body1-mesh-positions-array" count="144">-8.080143 15 15 2.5 15 15 2.5 15 0 -8.080143 15 0 -2.790071 15 7.5 -8.080143 10 15 -8.080143 10 0 -8.080143 12.5 7.5 0 10 15 0 10 0 -4.040071 10 7.5 0 0 15 0 0 0 0 5 7.5 25 0 15 25 0 0 12.5 0 7.5 2.5 5 15 25 5 15 25 5 0 2.5 5 0 13.75 5 7.5 2.5 10 7.5 25 -25 0 25 -25 15 25 -12.5 7.5 25 25 15 25 25 0 25 15 7.5 -25 -25 0 -25 25 0 -25 25 15 -25 -25 15 -25 0 7.5 0 -25 7.5 0 25 7.5 30 -30 0 30 30 0 30 30 15 30 -30 15 30 0 7.5 -30 -30 0 -30 -30 15 0 -30 7.5 -30 30 0 -30 30 15 -30 0 7.5 0 30 7.5</float_array>
+          <technique_common>
+            <accessor source="#Body1-mesh-positions-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body1-mesh-normals">
+          <float_array id="Body1-mesh-normals-array" count="18">0 1 0 -1 0 0 0 -1 0 1 0 0 0 0 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#Body1-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body1-mesh-map-0">
+          <float_array id="Body1-mesh-map-0-array" count="576">0 15 0 0 5.290071 7.5 5.290071 7.5 0 0 10.58014 0 5.290071 7.5 10.58014 0 10.58014 15 10.58014 15 0 15 5.290071 7.5 0 15 0 0 2.5 7.5 2.5 7.5 0 0 5 0 2.5 7.5 5 0 5 15 5 15 0 15 2.5 7.5 0 15 0 0 4.040071 7.5 4.040071 7.5 0 0 8.080143 0 4.040071 7.5 8.080143 0 8.080143 15 8.080143 15 0 15 4.040071 7.5 0 15 0 0 5 7.5 5 7.5 0 0 10 0 5 7.5 10 0 10 15 10 15 0 15 5 7.5 0 15 0 0 12.5 7.5 12.5 7.5 0 0 25 0 12.5 7.5 25 0 25 15 25 15 0 15 12.5 7.5 0 15 0 0 11.25 7.5 11.25 7.5 0 0 22.5 0 11.25 7.5 22.5 0 22.5 15 22.5 15 0 15 11.25 7.5 0 15 0 0 5 7.5 5 7.5 0 0 10 0 5 7.5 10 0 10 15 10 15 0 15 5 7.5 50 15 25 15 37.5 7.5 37.5 7.5 25 15 25 0 37.5 7.5 25 0 50 0 50 0 50 15 37.5 7.5 0 0 20 0 10 7.5 10 7.5 20 0 20 15 10 7.5 20 15 0 15 0 15 0 0 10 7.5 0 15 0 0 25 7.5 25 7.5 0 0 50 0 25 7.5 50 0 50 15 50 15 0 15 25 7.5 0 15 0 0 25 7.5 25 7.5 0 0 50 0 25 7.5 50 0 50 15 50 15 0 15 25 7.5 0 15 0 0 25 7.5 25 7.5 0 0 50 0 25 7.5 50 0 50 15 50 15 0 15 25 7.5 0 15 0 0 30 7.5 30 7.5 0 0 60 0 30 7.5 60 0 60 15 60 15 0 15 30 7.5 0 15 0 0 30 7.5 30 7.5 0 0 60 0 30 7.5 60 0 60 15 60 15 0 15 30 7.5 0 15 0 0 30 7.5 30 7.5 0 0 60 0 30 7.5 60 0 60 15 60 15 0 15 30 7.5 0 15 0 0 30 7.5 30 7.5 0 0 60 0 30 7.5 60 0 60 15 60 15 0 15 30 7.5 25 25 -30 30 -25 25 -25 25 -30 30 -30 -30 -25 25 -30 -30 -25 -25 -25 -25 -30 -30 30 -30 -25 -25 30 -30 25 -25 25 -25 30 -30 25 0 25 0 30 -30 30 30 25 0 30 30 25 5 25 5 30 30 25 25 25 25 30 30 -30 30 25 5 2.5 5 25 0 25 0 2.5 5 0 0 0 0 2.5 5 0 10 0 10 2.5 5 2.5 15 0 10 2.5 15 -8.080143 15 -8.080143 15 -8.080143 10 0 10 -25 5 -25 25 -30 30 -30 30 -25 25 25 25 -30 30 25 25 30 30 30 30 25 25 25 -25 30 30 25 -25 30 -30 30 -30 25 -25 -25 -25 30 -30 -25 -25 -30 -30 -30 -30 -25 -25 -25 0 -30 -30 -25 0 -30 30 -30 30 -25 0 -25 5 -25 5 -25 0 -2.5 5 -2.5 5 -25 0 0 0 -2.5 5 0 0 0 10 8.080143 10 8.080143 15 0 10 0 10 8.080143 15 -2.5 15 0 10 -2.5 15 -2.5 5</float_array>
+          <technique_common>
+            <accessor source="#Body1-mesh-map-0-array" count="288" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Body1-mesh-vertices">
+          <input semantic="POSITION" source="#Body1-mesh-positions"/>
+        </vertices>
+        <triangles material="Granite_-_Red-material" count="96">
+          <input semantic="VERTEX" source="#Body1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Body1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Body1-mesh-map-0" offset="2" set="0"/>
+          <p>3 0 0 0 0 1 4 0 2 4 0 3 0 0 4 1 0 5 4 0 6 1 0 7 2 0 8 2 0 9 3 0 10 4 0 11 6 1 12 5 1 13 7 1 14 7 1 15 5 1 16 0 1 17 7 1 18 0 1 19 3 1 20 3 1 21 6 1 22 7 1 23 9 2 24 8 2 25 10 2 26 10 2 27 8 2 28 5 2 29 10 2 30 5 2 31 6 2 32 6 2 33 9 2 34 10 2 35 12 1 36 11 1 37 13 1 38 13 1 39 11 1 40 8 1 41 13 1 42 8 1 43 9 1 44 9 1 45 12 1 46 13 1 47 15 2 48 14 2 49 16 2 50 16 2 51 14 2 52 11 2 53 16 2 54 11 2 55 12 2 56 12 2 57 15 2 58 16 2 59 20 0 60 17 0 61 21 0 62 21 0 63 17 0 64 18 0 65 21 0 66 18 0 67 19 0 68 19 0 69 20 0 70 21 0 71 2 3 72 1 3 73 22 3 74 22 3 75 1 3 76 17 3 77 22 3 78 17 3 79 20 3 80 20 3 81 2 3 82 22 3 83 24 1 84 14 1 85 25 1 86 25 1 87 14 1 88 15 1 89 25 1 90 15 1 91 23 1 92 23 1 93 24 1 94 25 1 95 27 1 96 19 1 97 28 1 98 28 1 99 19 1 100 18 1 101 28 1 102 18 1 103 26 1 104 26 1 105 27 1 106 28 1 107 32 3 108 29 3 109 33 3 110 33 3 111 29 3 112 30 3 113 33 3 114 30 3 115 31 3 116 31 3 117 32 3 118 33 3 119 24 0 120 23 0 121 34 0 122 34 0 123 23 0 124 29 0 125 34 0 126 29 0 127 32 0 128 32 0 129 24 0 130 34 0 131 31 2 132 30 2 133 35 2 134 35 2 135 30 2 136 27 2 137 35 2 138 27 2 139 26 2 140 26 2 141 31 2 142 35 2 143 39 3 144 36 3 145 40 3 146 40 3 147 36 3 148 37 3 149 40 3 150 37 3 151 38 3 152 38 3 153 39 3 154 40 3 155 42 2 156 41 2 157 43 2 158 43 2 159 41 2 160 36 2 161 43 2 162 36 2 163 39 2 164 39 2 165 42 2 166 43 2 167 45 1 168 44 1 169 46 1 170 46 1 171 44 1 172 41 1 173 46 1 174 41 1 175 42 1 176 42 1 177 45 1 178 46 1 179 38 0 180 37 0 181 47 0 182 47 0 183 37 0 184 44 0 185 47 0 186 44 0 187 45 0 188 45 0 189 38 0 190 47 0 191 26 4 192 45 4 193 31 4 194 31 4 195 45 4 196 42 4 197 31 4 198 42 4 199 32 4 200 32 4 201 42 4 202 39 4 203 32 4 204 39 4 205 24 4 206 24 4 207 39 4 208 14 4 209 14 4 210 39 4 211 38 4 212 14 4 213 38 4 214 18 4 215 18 4 216 38 4 217 26 4 218 26 4 219 38 4 220 45 4 221 18 4 222 17 4 223 14 4 224 14 4 225 17 4 226 11 4 227 11 4 228 17 4 229 8 4 230 8 4 231 17 4 232 1 4 233 8 4 234 1 4 235 0 4 236 0 4 237 5 4 238 8 4 239 19 5 240 27 5 241 37 5 242 37 5 243 27 5 244 30 5 245 37 5 246 30 5 247 44 5 248 44 5 249 30 5 250 29 5 251 44 5 252 29 5 253 41 5 254 41 5 255 29 5 256 23 5 257 41 5 258 23 5 259 36 5 260 36 5 261 23 5 262 15 5 263 36 5 264 15 5 265 37 5 266 37 5 267 15 5 268 19 5 269 19 5 270 15 5 271 20 5 272 20 5 273 15 5 274 12 5 275 20 5 276 12 5 277 9 5 278 6 5 279 3 5 280 9 5 281 9 5 282 3 5 283 2 5 284 9 5 285 2 5 286 20 5 287</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="wall_v1" name="wall v1" type="NODE">
+        <matrix sid="transform">0.001 0 0 0 0 -1.62921e-10 -0.001 0 0 0.001 -1.62921e-10 0 0 0 0 1</matrix>
+        <node id="Body1" name="Body1" type="NODE">
+          <matrix sid="transform">10 0 0 0 0 -4.37114e-7 -10 0 0 10 -4.37114e-7 0 0 0 0 1</matrix>
+          <instance_geometry url="#Body1-mesh" name="Body1">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Granite_-_Red-material" target="#Granite_-_Red-material">
+                  <bind_vertex_input semantic="Texture UVs" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.358891 0.7276763 0.3054208 -0.6141704 -6.925791 0 0.8953956 0.4452714 4.958309 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Light" name="Light" type="NODE">
+        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 4.076245 0.9551712 -0.1998834 0.2183912 1.005454 -0.05518906 0.6045247 0.7946723 5.903862 0 0 0 1</matrix>
+        <instance_light url="#Light-light"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
